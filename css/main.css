@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --black: hsl(219, 43%, 16%);
+    --dimgray: hsl(218, 20%, 36%);
+    --linen: hsl(30, 33%, 93%);
+    --whitesmoke: hsl(30, 29%, 97%);
+    --medium-slate-blue: hsl(264, 100%, 69%);
+    --dark-orchid: hsl(292, 76%, 54%);
+    --sandy-brown: hsl(31, 100%, 65%);
+}
+
+/* Tablet Styles */
+@media(max-width: 64rem){
+
+}
+
+/* Mobile Styles */
+@media(max-width: 48rem){
+
+}
