@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root{
+:root {
     --black: hsl(219, 43%, 16%);
     --dimgray: hsl(218, 20%, 36%);
     --linen: hsl(30, 33%, 93%);
@@ -16,12 +16,102 @@
     --sandy-brown: hsl(31, 100%, 65%);
 }
 
+body{
+    font-family: "Epilogue", sans-serif;
+}
+
+.rs-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+
+}
+
+.btn {
+    border-radius: 0.313rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-decoration: none;
+    width: 13.688rem;
+}
+
+.btn-request-1 {
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+.btn-request-1:hover{
+    background-color: var(--black);
+    color: var(--linen);
+}
+
+.btn-request-2 {
+    background-color: var(--black);
+    color: var(--linen);
+}
+
+.btn-request-2:hover{
+    background: linear-gradient(150deg, hsl(292, 76%, 54%) 0%, hsl(31, 100%, 65%) 100%);
+}
+
+.solutions-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solutions-row h1{
+    font-size: 3rem;
+    font-weight: 400;
+    width: 29rem;
+}
+
+.solutions-row p{
+    line-height: 1.5rem;
+    width: 21.875rem;
+}
+
+.solutions-row span{
+    font-weight: bold;
+}
+
+.curve-1 {
+    width: 17.938rem;
+}
+
+.business-box {
+
+}
+
+.testimonal-cotent-row {
+
+}
+
+.testimonial-img {
+
+}
+
+.curve-2 {
+
+}
+
+.testimonial-name {
+
+}
+
+.testimonial-company {
+
+}
+
 /* Tablet Styles */
-@media(max-width: 64rem){
+@media(max-width: 64rem) {
 
 }
 
 /* Mobile Styles */
-@media(max-width: 48rem){
+@media(max-width: 48rem) {
 
 }
