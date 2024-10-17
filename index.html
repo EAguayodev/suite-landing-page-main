@@ -34,11 +34,12 @@
     </div>
     <div>
       <picture>
-        <source media="(min-width: 90rem)" srcset="assets/image-hero-portrait@2x.webp">
+        <!-- <source media="(min-width: 90rem)" srcset="assets/image-hero-portrait@2x.webp"> -->
         <source media="(min-width: 64rem)" srcset="assets/image-hero-portrait.webp">
-        <source media="(min-width: 48rem)" srcset="assets/image-hero-landscape@2x.webp">
+        <!-- <source media="(min-width: 48rem)" srcset="assets/image-hero-landscape@2x.webp"> -->
         <source media="(min-width: 30rem)" srcset="assets/image-hero-landscape.webp">
-        <img src="assets/image-hero-portrait.webp" alt="hero portrait">
+        <img class="hero-portrait" src="assets/image-hero-portrait.webp" alt="hero portrait">
+        <img class="hero-landscape" src="assets/image-hero-landscape.webp" alt="hero landscape">
       </picture>
     </div>
     <div class="business-box">
@@ -71,11 +72,11 @@
   <!-- business solution box end -->
 
   <!-- testimonial section start -->
-  <div class="testimonal-cotent-row">
+  <div class="testimonial-content-row">
     <div>
       <picture>
         <source media="(min-width: 90rem)" srcset="assets/image-jeremy-large.webp">
-        <source media="(min-width: 64rem)" srcset="assets/image-jeremy-large@2x.webp">
+        <!-- <source media="(max-width: 64rem)" srcset="assets/image-jeremy-large@2x.webp"> -->
         <source media="(min-width: 48rem)" srcset="assets/image-jeremy-small.webp">
         <source media="(min-width: 30rem)" srcset="assets/image-jeremy-small@2x.webp">
         <img class="testimonial-img" src="assets/image-jeremy-large.webp" alt="Jeremy Robinson">
@@ -85,7 +86,7 @@
       <img class="curve-2" src="assets/pattern-curved-line-2.svg" alt="curve line 2">
     </div>
     <div>
-      <h3>It just works.</h3>
+      <h3>It just <span>works.</span></h3>
       <p>“I really like how it is an all-in-one solution that handle many of
         the tasks that you would normally need separate tools to do the same
         job. This thing is a miracle worker.”</p>
