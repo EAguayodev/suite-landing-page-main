@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: 3px solid red;
 }
 
 :root {
@@ -19,6 +20,7 @@
 body{
     background-color: var(--whitesmoke);
     font-family: "Epilogue", sans-serif;
+    max-width: 100%;
 }
 
 .rs-nav {
@@ -139,6 +141,8 @@ body{
     color: var(--linen);
     font-size: 3rem;
     font-weight: 400;
+    position: relative;
+    top: -2rem;
 }
 
 .testimonial-content-row span{
@@ -149,6 +153,7 @@ body{
     color: var(--linen);
     width: 21.875rem;
     line-height: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .testimonial-content-row small{
@@ -172,39 +177,85 @@ footer{
     background-color: var(--linen);
     height: 29rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .row{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-social{
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.icon-social:hover{
+    fill: var(--dimgray);
 }
 
 /* Tablet Styles */
 @media(max-width: 64rem) {
+
+    .solutions-row{
+        flex-wrap: wrap;
+    }
+
     .testimonial-content-row{
         flex-direction: column;
-        width: 43.063rem;
+        height: 42.75rem;
+        width: 90%;
     }
 
     .hero-landscape{
         display: none;
     }
 
+    .business-box{
+        display: flex;
+        align-items: end;
+        position: relative;
+        top: 10rem;
+        left: 0rem;
+        text-align: center;
+    }
+
     footer{
-        width: 48rem;
+        width: 100%;
     }
 }
 
 /* Mobile Styles */
-@media(max-width: 48rem) {
+@media(max-width: 25.75rem) {
+    .curve-1{
+        position: relative;
+        left: 10rem;
+        width: 9.467rem;
+    }
 
     .hero-landscape{
         display: block;
     }
+    .solutions-row h1{
+        position: relative;
+        left: 0;
+    }
+
+    .business-box{
+        flex-direction: column;
+        text-align: center;
+        left: 0;
+    }
+
+    .solutions-row p{
+        position: relative;
+        left: 0;
+    }
     .solutions-row{
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .solutions-row h1{
@@ -215,6 +266,12 @@ footer{
     .testimonial-content-row {
         flex-direction: column;
         width: 23.438rem;
+        height: 36.75rem;
+    }
+
+    .testimonial-img{
+        width: 100%;
+        height: 50%;
     }
 
     .hero-portrait{
@@ -223,6 +280,16 @@ footer{
 
     footer{
         width: 23.563rem;
-        height: 26.25rem;
+        height: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .icon-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
