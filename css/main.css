@@ -169,10 +169,6 @@ body{
     display: none;
 }
 
-.curve-2 {
-
-}
-
 footer{
     background-color: var(--linen);
     height: 29rem;
@@ -234,9 +230,16 @@ footer{
         left: 10rem;
         width: 9.467rem;
     }
+    .btn-request-2{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
 
     .hero-landscape{
         display: block;
+        position: relative;
+        top: 2rem;
     }
     .solutions-row h1{
         position: relative;
@@ -247,6 +250,7 @@ footer{
         flex-direction: column;
         text-align: center;
         left: 0;
+        top: 4rem;
     }
 
     .solutions-row p{
@@ -267,6 +271,7 @@ footer{
         flex-direction: column;
         width: 23.438rem;
         height: 36.75rem;
+        top: 2rem;
     }
 
     .testimonial-img{
