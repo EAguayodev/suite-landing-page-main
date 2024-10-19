@@ -209,7 +209,7 @@ footer {
 }
 
 /* Tablet Styles */
-@media(max-width: 64rem) {
+@media(max-width: 64rem) and (min-width: 48rem) {
     .solutions-row {
         flex-wrap: wrap;
     }
@@ -243,7 +243,7 @@ footer {
 }
 
 /* Mobile Styles */
-@media(max-width: 25.75rem) {
+@media(max-width: 26.875rem) and (min-width: 20rem) {
     .logo {
         position: relative;
         right: 0rem;
@@ -308,7 +308,7 @@ footer {
         flex-direction: column;
         width: 23.438rem;
         height: 36.75rem;
-        top: 2rem;
+        top: 5rem;
     }
 
     .testimonial-content-row h3 {
