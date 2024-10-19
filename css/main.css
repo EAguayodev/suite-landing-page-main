@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
 }
 
 :root {
@@ -17,10 +17,11 @@
     --sandy-brown: hsl(31, 100%, 65%);
 }
 
-body{
+body {
     background-color: var(--whitesmoke);
     font-family: "Epilogue", sans-serif;
     max-width: 100%;
+    width: 100%;
 }
 
 .rs-nav {
@@ -47,7 +48,7 @@ body{
     color: var(--black);
 }
 
-.btn-request-1:hover{
+.btn-request-1:hover {
     background-color: var(--black);
     color: var(--linen);
 }
@@ -59,7 +60,7 @@ body{
     left: 7rem;
 }
 
-.btn-request-2:hover{
+.btn-request-2:hover {
     background: linear-gradient(150deg, hsl(292, 76%, 54%) 0%, hsl(31, 100%, 65%) 100%);
 }
 
@@ -69,7 +70,7 @@ body{
     align-items: center;
 }
 
-.solutions-row h1{
+.solutions-row h1 {
     color: var(--black);
     font-size: 4.5rem;
     font-weight: 400;
@@ -79,12 +80,12 @@ body{
     left: 7rem;
 }
 
-.solutions-row h2{
+.solutions-row h2 {
     font-size: 3rem;
     margin-bottom: 0.1em;
 }
 
-.solutions-row p{
+.solutions-row p {
     color: var(--dimgray);
     line-height: 1.5rem;
     width: 21.875rem;
@@ -94,7 +95,7 @@ body{
 }
 
 
-.solutions-row span{
+.solutions-row span {
     font-weight: bold;
 }
 
@@ -104,7 +105,7 @@ body{
     width: 17.938rem;
 }
 
-.hero-portrait{
+.hero-portrait {
     position: relative;
     top: 3rem;
     right: 3.5rem;
@@ -113,31 +114,34 @@ body{
 
 .business-box {
     position: relative;
-    left: 8rem;
-    
+    left: 3rem;
+
 }
 
-.business-box p{
+.business-box p {
     color: var(--dimgray);
     position: relative;
     left: 0;
 }
+
 .testimonial-content-row {
     background-image: url(../assets/pattern-blur.svg);
     background-repeat: no-repeat;
-    background: var(--black);
+    background-position: left center;
+    background-color: var(--black);
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     height: 34.063rem;
     width: 69.313rem;
+    max-width: 100%;
     border-radius: 0.625rem;
     position: relative;
     top: 18rem;
 }
 
-.testimonial-content-row h3{
+.testimonial-content-row h3 {
     color: var(--linen);
     font-size: 3rem;
     font-weight: 400;
@@ -145,7 +149,7 @@ body{
     top: -2rem;
 }
 
-.testimonial-content-row span{
+.testimonial-content-row span {
     font-weight: bold;
 }
 
@@ -154,10 +158,20 @@ body{
     width: 21.875rem;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
+    font-weight: 300;
 }
 
-.testimonial-content-row small{
+.testimonial-content-row,
+p.testimonial-name {
     color: var(--whitesmoke);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-content-row,
+small.testimonial-company {
+    color: var(--linen);
+    font-weight: 300;
 }
 
 .testimonial-img {
@@ -165,51 +179,56 @@ body{
     top: -1.3rem;
 }
 
-.hero-landscape{
+.hero-landscape {
     display: none;
 }
 
-footer{
+footer {
     background-color: var(--linen);
     height: 29rem;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: end;
 }
 
-.row{
+.row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
 }
 
-.icon-social{
+.icon-social {
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0 15px;
 }
 
-.icon-social:hover{
+.icon-social:hover {
     fill: var(--dimgray);
 }
 
 /* Tablet Styles */
 @media(max-width: 64rem) {
-
-    .solutions-row{
+    .solutions-row {
         flex-wrap: wrap;
     }
 
-    .testimonial-content-row{
+    .testimonial-content-row {
         flex-direction: column;
         height: 42.75rem;
         width: 90%;
     }
 
-    .hero-landscape{
+    .testimonial-content-row h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-landscape {
         display: none;
     }
 
-    .business-box{
+    .business-box {
         display: flex;
         align-items: end;
         position: relative;
@@ -218,51 +237,69 @@ footer{
         text-align: center;
     }
 
-    footer{
+    footer {
         width: 100%;
     }
 }
 
 /* Mobile Styles */
 @media(max-width: 25.75rem) {
-    .curve-1{
+    .logo {
+        position: relative;
+        right: 0rem;
+        top: 1rem;
+    }
+
+    .curve-1 {
         position: relative;
         left: 10rem;
+        top: 2rem;
         width: 9.467rem;
     }
-    .btn-request-2{
+
+    .btn-request-1{
+        width: 11.375rem;
+        position: relative;
+        top: 1.2rem;
+    }
+
+    .btn-request-2 {
         position: relative;
         left: 0;
         top: 0;
     }
 
-    .hero-landscape{
+    .hero-landscape {
         display: block;
         position: relative;
         top: 2rem;
     }
-    .solutions-row h1{
+
+    .solutions-row h1 {
         position: relative;
         left: 0;
+        top: 2rem;
     }
 
-    .business-box{
+    .business-box {
         flex-direction: column;
         text-align: center;
         left: 0;
         top: 4rem;
     }
 
-    .solutions-row p{
+    .solutions-row p {
         position: relative;
         left: 0;
+        top: 1.5rem;
     }
-    .solutions-row{
+
+    .solutions-row {
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .solutions-row h1{
+    .solutions-row h1 {
         font-size: 2.375rem;
         width: 21.438rem;
     }
@@ -274,27 +311,50 @@ footer{
         top: 2rem;
     }
 
-    .testimonial-img{
+    .testimonial-content-row h3 {
+        top: -21rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .curve-2 {
+        position: relative;
+        top: -15rem;
+    }
+
+    .testimonial-content-row p {
+        top: -17rem;
+        text-align: center;
+        position: relative;
+        width: 21.438rem;
+    }
+
+    .testimonial-img {
         width: 100%;
         height: 50%;
     }
 
-    .hero-portrait{
+    .hero-portrait {
         display: none;
     }
 
-    footer{
+    footer {
         width: 23.563rem;
-        height: 100%;
+        height: 26.25rem;
+        justify-content: center;
+        align-items: center;
     }
 
-    .row{
+    .row {
         flex-direction: column;
     }
 
-    .icon-social{
-        display: flex;
-        flex-direction: column;
+    .curve-2 {
+        width: 3.079rem;
+    }
+
+    .icon-social {
         justify-content: space-around;
+        margin: 30px 14px;
     }
 }
