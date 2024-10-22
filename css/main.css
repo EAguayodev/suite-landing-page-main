@@ -311,7 +311,7 @@ footer {
     }
 
     .testimonial-content-row h3 {
-        top: -21rem;
+        top: -12rem;
         font-size: 2.5rem;
         text-align: center;
     }
@@ -322,10 +322,16 @@ footer {
     }
 
     .testimonial-content-row p {
-        top: -17rem;
+        top: -10rem;
         text-align: center;
         position: relative;
         width: 21.438rem;
+    }
+
+    .testimonial-company{
+        position: relative;
+            top: -10rem;
+            left: 9rem;
     }
 
     .testimonial-img {
