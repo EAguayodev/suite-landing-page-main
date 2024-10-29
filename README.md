@@ -1,7 +1,5 @@
 # Frontend Mentor - Suite landing page solution
 
-This is a solution to the [Suite landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/suite-landing-page-tj_eaU-Ra). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -25,63 +23,57 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/EAguayodev/suite-landing-page-main)
+- Live Site URL: [Vercel](https://suite-landing-page-main.vercel.app/)
 
 ## My process
+1. Planning the Structure: I started by carefully planning the HTML structure, sketching out the document layout to ensure it would be organized and adaptable for different screen sizes.
+
+2. Researching CSS Properties: Next, I reviewed CSS properties on a reference page to decide on class names and styling approaches that would best support responsive design. This step helped me align class names with the styles required to achieve the design goals.
+
+3. Implementing Desktop-to-Mobile Workflow: I used a desktop-to-mobile workflow, building the layout from the largest viewport and working down to ensure responsiveness on smaller screens.
+
+4. Matching the Design Closely: Throughout, I focused on ensuring that the visual result closely matched the provided design, adjusting breakpoints and image sources to optimize the appearance across devices.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Desktop-first workflow
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Ensuring Design Accuracy: Finally, I focused on matching the design closely, adjusting breakpoints and image sources as needed for optimal display on both portrait and landscape orientations.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <picture>
+    <source media="(min-width: 58rem)" srcset="assets/image-jeremy-large.webp">
+    <source media="(max-width: 35rem)" srcset="assets/image-jeremy-small.webp">
+    <source media="(max-width: 48rem)" srcset="assets/image-jeremy-small@2x.webp">
+    <img class="testimonial-img" src="assets/image-jeremy-small.webp" alt="Jeremy Robinson">
+  </picture>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.btn-request-2:hover {
+    background: linear-gradient(150deg, hsl(292, 76%, 54%) 0%, hsl(31, 100%, 65%) 100%);
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+To further strengthen my skills, I plan to complete as many junior developer challenges as possible over the next three months. These challenges will help me solidify foundational concepts, refine my approach to responsive design, and expand my experience with new techniques in HTML, CSS, and JavaScript. By consistently tackling these tasks, I aim to grow my proficiency and prepare for more advanced projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - This helped me for finding the picture element, and using the source and img elements to create responsive images.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Website - [Eric Aguayo](https://www.ericaguayo.com)
+- Frontend Mentor - [@EAguayodev](https://www.frontendmentor.io/profile/EAguayodev/solutions)
