@@ -173,6 +173,12 @@ small.testimonial-company {
     font-weight: 300;
 }
 
+.testimonial-company{
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+}
+
 .testimonial-img {
     position: relative;
     top: -1.3rem;
@@ -213,6 +219,40 @@ footer {
         flex-wrap: wrap;
     }
 
+    .curve-1{
+        left: 10rem;
+        top: 2rem;
+    }
+
+    .solutions-row h1{
+        position: relative;
+        left: -4rem;
+        font-size: 3.5rem;
+        width: 33rem;
+        top: 3rem;
+    }
+
+    .solutions-row p{
+        position: relative;
+        left: -3.5rem;
+        top: 2rem;
+    }
+
+    .btn-request-2{
+        position: relative;
+        left: -3.5rem;
+    }
+
+    .business-box h2{
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .business-box p {
+        position: relative;
+        left: 1.5rem;
+    }
+
     .testimonial-content-row {
         flex-direction: column;
         height: 42.75rem;
@@ -221,6 +261,32 @@ footer {
 
     .testimonial-content-row h3 {
         font-size: 2.5rem;
+        text-align: center;
+        position: relative;
+        top: -6rem;
+    }
+
+    .testimonial-content-row p {
+        text-align: center;
+        position: relative;
+        top: -4rem;
+        width: 30.5rem;
+    }
+
+    .testimonial-img{
+        position: relative;
+        top: -10.3rem;
+    }
+
+    .testimonial-company{
+        position: relative;
+        left: 13rem;
+        top: -4rem;
+    }
+
+    .curve-2{
+        position: relative;
+        top: -8rem;
     }
 
     .hero-landscape {
