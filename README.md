@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/EAguayodev/suite-landing-page-main)
-- Live Site URL: [Vercel](https://suite-landing-page-main.vercel.app/)
+- Live Site URL: [Netlify](https://suite-landing-page-1.netlify.app/)
 
 ## My process
 1. Planning the Structure: I started by carefully planning the HTML structure, sketching out the document layout to ensure it would be organized and adaptable for different screen sizes.
